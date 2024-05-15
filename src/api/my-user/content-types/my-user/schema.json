@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "my_users",
+  "info": {
+    "singularName": "my-user",
+    "pluralName": "my-users",
+    "displayName": "MyUser"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    },
+    "password": {
+      "type": "password",
+      "required": true
+    }
+  }
+}
